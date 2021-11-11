@@ -52,7 +52,7 @@ namespace LotteryPicker
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(324, 18);
             this.outputLabel.TabIndex = 1;
-            this.outputLabel.Text = "Your number:";
+            this.outputLabel.Text = "Your Number:";
             // 
             // label1
             // 

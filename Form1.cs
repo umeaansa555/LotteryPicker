@@ -19,7 +19,7 @@ namespace LotteryPicker
         int num4;
         int num5;
         int num6;
-        int max = 100;
+        int maxvalue = 7;
 
         public Form1()
         {
@@ -28,7 +28,11 @@ namespace LotteryPicker
 
         private void button1_Click(object sender, EventArgs e)
         {
+            outputLabel.Text = "Your Number: ";
+            num1 = randGen.Next(1,8);
 
+            outputLabel.Text += $"{num1} {num2} {num3} {num4} {num5} {num6}";
         }
+        
     }
 }
