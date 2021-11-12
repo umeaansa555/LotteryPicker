@@ -29,31 +29,37 @@ namespace LotteryPicker
         private void button1_Click(object sender, EventArgs e)
         {
             outputLabel.Text = "Your Number: ";
-            num1 = randGen.Next(1,8);
-            num2 = randGen.Next(1,8);
-            num3 = randGen.Next(1,8);
-            num4 = randGen.Next(1,8);
-            num5 = randGen.Next(1,8);
-            num6 = randGen.Next(1,8);
+            num1 = randGen.Next(1, 8);
+            num2 = randGen.Next(1, 8);
+            num3 = randGen.Next(1, 8);
+            num4 = randGen.Next(1, 8);
+            num5 = randGen.Next(1, 8);
+            num6 = randGen.Next(1, 8);
 
-
-            outputLabel.Text += $"{num1} {num2} {num3} {num4} {num5} {num6}";
 
             while (num2 == num1)
             {
-                num2 = randGen.Next(1,8);
+                num2 = randGen.Next(1, 8);
             }
-            //while (num3 == num1; num3 == num2)
-            //{
-            //    num3 = randGen.Next(1, 8);
-            //}
-            //while (num4 == num1 , num4 == num2, num4 == num3)
-            //{
-            //    num4 = randGen.Next(1, 8);
-            //}
-            //while (num5 == num1 , num5 == num2)
-            //{
-            //    num5 = randGen.Next(1, 8);
+            while (num3 == num1 || num3 == num2)
+            {
+                num3 = randGen.Next(1, 8);
             }
+            while (num4 == num1 || num4 == num2 || num4 == num3)
+            {
+                num4 = randGen.Next(1, 8);
+            }
+            while (num5 == num1 || num5 == num2 || num5 == num3 || num5 == num4)
+            {
+                num5 = randGen.Next(1, 8);
+            }
+            while (num6 == num1 || num6 == num2 || num6 == num3 || num6 == num4 || num6 == num5)
+            {
+                num6 = randGen.Next(1, 8);
+            }
+
+            outputLabel.Text += $"{num1} {num2} {num3} {num4} {num5} {num6}";
+
         }
     }
+}
