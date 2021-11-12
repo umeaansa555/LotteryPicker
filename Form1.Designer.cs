@@ -36,16 +36,19 @@ namespace LotteryPicker
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Snow;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(45, 56);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(324, 118);
             this.button1.TabIndex = 0;
             this.button1.Text = "Generate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // outputLabel
             // 
+            this.outputLabel.BackColor = System.Drawing.Color.Red;
             this.outputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.outputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.outputLabel.Location = new System.Drawing.Point(45, 189);
@@ -67,6 +70,7 @@ namespace LotteryPicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(416, 244);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.outputLabel);
