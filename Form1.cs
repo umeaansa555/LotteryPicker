@@ -13,13 +13,9 @@ namespace LotteryPicker
     public partial class Form1 : Form
     {
         Random randGen = new Random();
-        int num1;
-        int num2;
-        int num3;
-        int num4;
-        int num5;
-        int num6;
-        int maxvalue = 7;
+        List<int> numbers = new List<int>();\
+        int randTemp;
+        int MaxValue = 100;
 
         public Form1()
         {
