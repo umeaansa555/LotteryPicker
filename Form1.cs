@@ -13,7 +13,7 @@ namespace LotteryPicker
     public partial class Form1 : Form
     {
         Random randGen = new Random();
-        List<int> numbers = new List<int>();\
+        List<int> numbers = new List<int>();
         int randTemp;
         int MaxValue = 100;
 
@@ -59,8 +59,15 @@ namespace LotteryPicker
 
             for (int i = 0; i > numbers.Count; i++)
             {
+                randTemp = randGen.Next(1,7);
+                    while(numbers.Contains(randTemp))
+                {
+                    randTemp = randGen.Next(1,7);
+                }
+                numbers.Add(randTemp);
 
             }
+            outputLabel.Text += numbers + "\n";
         }
     }
 }
